@@ -14,7 +14,6 @@ function Home()
           isReverse
         />
       </div>
-
       <div id="main-area" className="flex flex-col justify-center flex-grow">
         <h1 className="block font-bold text-[40px] shrink grow-0">
           ANDREW WANG
@@ -31,7 +30,6 @@ function Home()
           />
         </nav>
       </div>
-      
       <div className="self-end">
         <Slider
           text={"I BUILD STUFF"}
