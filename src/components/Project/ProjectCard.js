@@ -27,10 +27,10 @@ function ProjectCard({image, imageAlt, title, githubHref=null, Content}) {
     <motion.div 
       initial={offscreen}
       whileInView={onscreen}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.4 }}
     >
       <section className="p-6 flex flex-col md:flex-row border-2 rounded border-dark-accent 
-        transition-transform ease-out delay-300 hover:scale-105"
+        ease-out duration-200 hover:scale-105"
       >
         <div className="flex items-center md:w-1/2">
           <img

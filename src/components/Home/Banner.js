@@ -23,10 +23,12 @@ function Banner()
           <IconButton 
             Icon={<AiFillGithub/>}
             href={"https://github.com/AncientMeme"}
+            aria={"GitHub link to Andrew Wang's Profile"}
           />
           <IconButton 
             Icon={<AiFillLinkedin/>}
             href={"https://www.linkedin.com/in/andrew-wang-dev/"}
+            aria={"LinkedIn link to Andrew Wang's Profile"}
           />
         </nav>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-function IconButton({href, Icon})
+function IconButton({href, aria, Icon})
 {
   return (
     <a 
@@ -8,6 +8,7 @@ function IconButton({href, Icon})
       href={href}
       rel="noreferrer"
       target="_blank"
+      aria-label={aria}
     >
       {Icon}
     </a>
