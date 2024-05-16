@@ -19,6 +19,9 @@ module.exports = {
       fontFamily: {
         'sans': ['"Noto Sans"', ...defaultTheme.fontFamily.sans]
       },
+      boxShadow: {
+        'back': '0 0 8px 4px var(--tw-shadow);',
+      },
     },
   },
   plugins: [],

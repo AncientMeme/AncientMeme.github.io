@@ -11,7 +11,8 @@ function LinkButton({Icon, text, href}) {
 
   return(
     <a
-      className="p-1 rounded text-lg bg-dark-accent text-dark-text flex items-center duration-200 hover:bg-dark-highlight md:text-xl"
+      className="p-1 rounded text-lg bg-dark-accent text-dark-primary flex items-center duration-200 
+        hover:bg-dark-highlight md:p-3 md:text-xl"
       href={href}
       rel="noreferrer"
       target="_blank"

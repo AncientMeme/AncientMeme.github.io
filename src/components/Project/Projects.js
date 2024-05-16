@@ -21,7 +21,7 @@ function Projects()
   }
 
   return(
-    <article className="p-4 md:p-28">
+    <article className="p-4 md:p-28 overflow-hidden">
       <h1 className="my-8 text-[40px] font-bold">Projects</h1>
       <section className="flex flex-col gap-y-8 justify-center">
         {projectCards}
