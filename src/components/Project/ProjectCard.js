@@ -7,7 +7,7 @@ function ProjectCard({image, imageAlt, title, githubHref=null, Content}) {
   // Animation properties
   const offscreen = {
     x: 200,
-    y: 150,
+    y: -150,
     rotate: -45,
     opacity: 0,
   };
