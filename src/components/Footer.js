@@ -4,11 +4,11 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 function Footer() {
   return (
-    <div className="my-6 flex flex-col md:flex-row justify-between">
+    <div className="my-6 flex flex-col md:flex-row justify-between gap-y-2">
       <div className="flex items-center justify-center">
         <p className="text-center md:text-left">Developed by Andrew Wang, 2024</p>
       </div>
-      <nav className="text-lg md:text-2xl flex content-center items-center justify-center">
+      <nav className="text-3xl flex content-center items-center justify-center">
           <IconButton 
             Icon={<AiFillGithub/>}
             href={"https://github.com/AncientMeme"}
