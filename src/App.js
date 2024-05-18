@@ -1,9 +1,9 @@
 import './App.css';
-import Home from './components/Home/Home.js';
+import Home from './components/Home.js';
 
 function App() {
   return (
-    <div className="text-dark-text bg-dark-primary">
+    <div className="text-dark-text bg-dark-primary box-border">
       <Home/>
     </div>
   );
