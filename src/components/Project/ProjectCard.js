@@ -2,15 +2,23 @@ import React from "react";
 import { motion } from "framer-motion";
 import { AiFillGithub } from "react-icons/ai";
 import LinkButton from "../LinkButton";
+import { useMediaQuery } from "react-responsive";
 
 function ProjectCard({image, imageAlt, title, githubHref=null, Content}) {
   // Animation properties
-  const offscreen = {
-    x: 200,
-    y: -150,
-    rotate: -45,
+  const isMobile = useMediaQuery({maxWidth:800});
+  const offscreen = isMobile ? {
+    x: 0,
+    y: 120,
+    rotate: -25,
+    opacity: 0,
+  } : {
+    x: 0,
+    y: 60,
+    rotate: 0,
     opacity: 0,
   };
+
   const onscreen = {
     x: 0,
     y: 0,
@@ -18,7 +26,7 @@ function ProjectCard({image, imageAlt, title, githubHref=null, Content}) {
     opacity: 1,
     transition: {
       type: "spring",
-      bounce: 0.2,
+      bounce: 0.3,
       duration: 0.8,
     }
   };
@@ -27,11 +35,9 @@ function ProjectCard({image, imageAlt, title, githubHref=null, Content}) {
     <motion.div 
       initial={offscreen}
       whileInView={onscreen}
-      viewport={{ once: true, amount: 0.4 }}
+      viewport={{ once: true, amount: (isMobile ? 0.2 : 0.5) }}
     >
-      <section className="p-6 flex flex-col md:flex-row border-2 rounded border-dark-accent 
-        ease-out duration-200 hover:scale-105"
-      >
+      <section className="p-6 flex flex-col md:flex-row border-2 rounded border-dark-accent">
         <div className="flex items-center md:w-1/2">
           <img
             className="mb-2 md:mb-0 md:p-8 md:w-full"
@@ -46,7 +52,7 @@ function ProjectCard({image, imageAlt, title, githubHref=null, Content}) {
           </div>
           <nav className="mt-4 flex justify-around">
             <LinkButton
-              id="1"
+              key="button-0"
               Icon={<AiFillGithub className="text-2xl"/>}
               text={"Source"}
               href={githubHref}

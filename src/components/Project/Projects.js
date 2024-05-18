@@ -10,7 +10,7 @@ function Projects()
     let project = ProjectList[i];
     projectCards.push(
       <ProjectCard 
-        id={`project-${i}`} 
+        key={`project-${i}`} 
         image={project.image}
         imageAlt={project.alt}
         title={project.title}
@@ -21,8 +21,8 @@ function Projects()
   }
 
   return(
-    <article className="p-4 md:p-28 overflow-hidden">
-      <h1 className="my-8 text-[40px] font-bold">Projects</h1>
+    <article className="px-4 md:mt-12 md:px-28 overflow-hidden">
+      <h1 className="my-8 text-[40px] md:text-5xl font-bold">Projects</h1>
       <section className="flex flex-col gap-y-8 justify-center">
         {projectCards}
       </section>
