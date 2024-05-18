@@ -21,8 +21,8 @@ function Projects()
   }
 
   return(
-    <article className="px-4 md:mt-12 md:px-28 overflow-hidden">
-      <h1 className="my-8 text-[40px] md:text-5xl font-bold">Projects</h1>
+    <article className="overflow-hidden">
+      <h1 className="my-8 text-[40px] font-bold">Projects</h1>
       <section className="flex flex-col gap-y-8 justify-center">
         {projectCards}
       </section>

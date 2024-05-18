@@ -32,7 +32,18 @@ const AboutContent = [
     id: "about-3",
     Content:
       <>
-        In general, I am a software developer that likes to be whimsical in presentation, and pratical in solving problems.
+        Besides writing code, Here are some other things I do:
+        <ul className="pl-4 list-disc">
+          <li>Interact with <TextLink text="other local developers" href="https://www.meetup.com/brisbane-beginner-coder-collective/"/>.</li>
+          <li>An active member of the <TextLink text="UQ Computing Society" href="https://uqcs.org/" /></li>
+        </ul>
+      </>
+  },
+  {
+    id: "about-4",
+    Content:
+      <>
+        In general, I am a software developer that likes to be whimsical in presentation, and practical in solving problems.
       </>
   }
 ];

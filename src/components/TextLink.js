@@ -8,7 +8,7 @@ function TextLink({text, href=""})
       href={href}
     >
       <div className="inline text-dark-accent group-hover:text-dark-primary group-hover:no-underline relative
-        transition-colors duration-200 ease-out z-10 underline">
+        transition-colors duration-200 ease-out z-10 underline underline-offset-4">
         {text}
       </div>
       <div 

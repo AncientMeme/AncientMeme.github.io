@@ -5,23 +5,35 @@ import AboutContent from "./AboutContent";
 function About() {
   // Animation
   const container = {
-    hidden: {opacity: 0},
+    hidden: {
+      x: -100,
+      opacity: 0,
+    },
     show: {
+      x: 0,
       opacity: 1,
       transition: {
-        staggerChildren: 0.25
+        bounch: 0.1,
+        duration: 0.5,
+        delayChildren: 0.5,
+        staggerChildren: 0.5,
       }
     }
   }
 
   const element = {
     hidden: {
-      y: 50,
+      y: 30,
       opacity: 0,
     },
     show: {
       y: 0,
       opacity: 1,
+      transition: {
+        bounch: 0,
+        ease: "easeOut",
+        duration: 0.5,
+      }
     }
   }
 
@@ -31,11 +43,10 @@ function About() {
     content.push(
       <motion.div
         key={entry.id}
-        className="mb-4"
+        className="mb-6 last:mb-0"
         variants={element}
       >
         {entry.Content}
-        <br></br>
       </motion.div>
     );
   });
@@ -45,10 +56,9 @@ function About() {
         variants={container}
         initial="hidden"
         whileInView="show"
-        className="px-4 md:mt-12 md:px-28"
-        viewport={{once: true, amount: 0.8}}
+        viewport={{once: true, amount: 0.4}}
       >
-        <h1 key="about-header" className="my-8 text-[40px] md:text-5xl font-bold">About</h1>
+        <h1 key="about-header" className="my-8 text-[40px] font-bold">About</h1>
         {content}
       </motion.section>
   );

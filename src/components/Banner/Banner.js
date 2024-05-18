@@ -1,7 +1,9 @@
 import React from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import Resume from "../../assets/andrew-wang-cv.pdf";
 import IconButton from "../IconButton.js";
 import Slider from "../Slider.js";
+import { CgFileDocument } from "react-icons/cg";
 
 function Banner()
 {
@@ -18,8 +20,8 @@ function Banner()
         <h1 className="block font-bold text-[36px] md:text-5xl shrink grow-0">
           ANDREW WANG
         </h1>
-        <h2 className="text-xl md:text-3xl md:mt-4 text-dark-accent">Software Developer</h2>
-        <nav className="mt-6 flex content-center justify-center">
+        <h2 className="text-2xl md:text-3xl md:mt-4 text-dark-accent">Software Developer</h2>
+        <nav className="text-5xl md:text-6xl mt-6 flex content-center justify-center gap-x-2">
           <IconButton 
             Icon={<AiFillGithub/>}
             href={"https://github.com/AncientMeme"}
@@ -29,6 +31,11 @@ function Banner()
             Icon={<AiFillLinkedin/>}
             href={"https://www.linkedin.com/in/andrew-wang-dev/"}
             aria={"LinkedIn link to Andrew Wang's Profile"}
+          />
+          <IconButton 
+            Icon={<CgFileDocument/>}
+            href={Resume}
+            aria={"Andrew Wang's Resume"}
           />
         </nav>
       </div>

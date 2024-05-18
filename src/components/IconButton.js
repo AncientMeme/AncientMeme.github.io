@@ -1,10 +1,10 @@
 import React from "react";
 
-function IconButton({href, aria, Icon})
+function IconButton({href, aria, size, Icon})
 {
   return (
     <a 
-      className="m-2 text-4xl text-dark-text md:text-6xl"
+      className="m-2 text-dark-text"
       href={href}
       rel="noreferrer"
       target="_blank"

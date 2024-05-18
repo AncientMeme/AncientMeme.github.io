@@ -25,7 +25,7 @@ function Slider({text="placeholder", repeatCount=5, isReverse=false}) {
   for (let i = 0; i < realCount * 2; ++i) {
     elements.push(
       <div key={i} className="flex-shrink-0 px-4" style={{ width: `${100 / realCount}%` }}>
-        <div className={`flex flex-col items-center justify-center h-full font-black text-base md:text-xl`}>
+        <div className={`flex flex-col items-center justify-center h-full font-black text-base cursor-default md:text-xl`}>
           {text}
         </div>
       </div>
