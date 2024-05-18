@@ -32,7 +32,7 @@ function About() {
       transition: {
         bounch: 0,
         ease: "easeOut",
-        duration: 0.3,
+        duration: 0.25,
       }
     }
   }
