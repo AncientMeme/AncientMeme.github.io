@@ -1,14 +1,6 @@
 import React from "react";
 
 function LinkButton({Icon, text, href}) {
-  const content = [];
-  if (Icon != null) {
-    content.push(Icon);
-  }
-  if (text != null) {
-    content.push(<p className="text-bold px-2">{text}</p>);
-  }
-
   return(
     <a
       className="p-1 rounded text-lg bg-dark-accent text-dark-primary flex items-center duration-200 
@@ -17,7 +9,8 @@ function LinkButton({Icon, text, href}) {
       rel="noreferrer"
       target="_blank"
     >
-      {content}
+      {Icon}
+      <p className="text-bold px-2">{text}</p>
     </a>
   );
 }
