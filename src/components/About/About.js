@@ -1,20 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import AboutContent from "./AboutContent";
+import SectionHeader from "../SectionHeader";
 
 function About() {
   // Animation
   const container = {
-    hidden: {
-      x: -100,
-      opacity: 0,
-    },
+    hidden: {},
     show: {
-      x: 0,
-      opacity: 1,
       transition: {
-        bounch: 0.1,
-        duration: 0.5,
         delayChildren: 0.5,
         staggerChildren: 0.5,
       }
@@ -58,7 +52,7 @@ function About() {
         whileInView="show"
         viewport={{once: true, amount: 0.4}}
       >
-        <h1 key="about-header" className="my-8 text-[40px] font-bold">About</h1>
+        <SectionHeader text="About"/>
         {content}
       </motion.section>
   );
