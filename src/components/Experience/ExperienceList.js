@@ -23,7 +23,7 @@ const ExperienceList = [
             implement <Highlight text="custom solutions"/> when no such tools exist.
           </li>
           <li>
-            Setup <Highlight text="social media integration"/> and <Highlight text="email marketing"/> 
+            Setup <Highlight text="social media integration"/> and <Highlight text="email marketing "/> 
             to increase website traffic by 1000 users per week.
           </li>
         </ul>
