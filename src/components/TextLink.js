@@ -6,6 +6,8 @@ function TextLink({text, href=""})
     <a 
       className="group relative inline"
       href={href}
+      rel="noreferrer"
+      target="_blank"
     >
       <div className="inline text-dark-accent group-hover:text-dark-primary group-hover:no-underline relative
         transition-colors duration-200 ease-out z-10 underline underline-offset-4">
