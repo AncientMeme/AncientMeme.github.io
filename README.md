@@ -1,5 +1,6 @@
 # [Portfolio Website](https://ancientmeme.github.io/)
-My personal portfolio built to showcase my experience and projects.
+My [personal portfolio](https://ancientmeme.github.io/) built to showcase my experience and projects.
+![website thumbnail](src/assets/thumbnail.png)
 
 ## Built With
 This portfolio website is built using:\
