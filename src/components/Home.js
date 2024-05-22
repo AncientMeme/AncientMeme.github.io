@@ -10,7 +10,7 @@ function Home()
   return (
     <>
       <Banner />
-      <div className="px-4 md:mt-12 md:px-28">
+      <div className="px-6 md:mt-12 md:px-24 xl:px-44">
         <About />
         <Experience />
         <Projects />
