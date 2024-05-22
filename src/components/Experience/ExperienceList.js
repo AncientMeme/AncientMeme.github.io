@@ -20,7 +20,7 @@ const ExperienceList = [
           </li>
           <li>
             Research available and afforable solutions for the client, or 
-            implement <Highlight text="custom solutions"/> when no such tools exist.
+            implement <Highlight text="custom Javascript solutions"/> when no such tools exist.
           </li>
           <li>
             Setup <Highlight text="social media integration"/> and <Highlight text="email marketing "/> 
