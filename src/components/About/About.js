@@ -9,8 +9,8 @@ function About() {
     hidden: {},
     show: {
       transition: {
-        delayChildren: 0.5,
-        staggerChildren: 0.5,
+        delayChildren: 0,
+        staggerChildren: 0.4,
       }
     }
   }
@@ -26,7 +26,7 @@ function About() {
       transition: {
         bounch: 0,
         ease: "easeOut",
-        duration: 0.25,
+        duration: 0.4,
       }
     }
   }
@@ -35,13 +35,13 @@ function About() {
   const content = [];
   AboutContent.forEach((entry) => {
     content.push(
-      <motion.div
+      <div
         key={entry.id}
         className="mb-6 last:mb-0"
-        variants={element}
+        
       >
         {entry.Content}
-      </motion.div>
+      </div>
     );
   });
 
@@ -53,7 +53,11 @@ function About() {
         viewport={{once: true, amount: 0.4}}
       >
         <SectionHeader text="About"/>
-        {content}
+        <motion.section
+          variants={element}
+        >
+          {content}
+        </motion.section>
       </motion.section>
   );
 }

@@ -14,7 +14,7 @@ function ProjectCard({image, imageAlt, title, githubHref=null, Content}) {
     opacity: 0,
   } : {
     x: 0,
-    y: 60,
+    y: 75,
     rotate: 0,
     opacity: 0,
   };
@@ -35,7 +35,7 @@ function ProjectCard({image, imageAlt, title, githubHref=null, Content}) {
     <motion.div 
       initial={offscreen}
       whileInView={onscreen}
-      viewport={{ once: true, amount: (isMobile ? 0.2 : 0.5) }}
+      viewport={{ once: true, amount: (isMobile ? 0.2 : 0.1) }}
     >
       <section className="p-6 flex flex-col md:flex-row border-2 rounded border-dark-accent">
         <div className="flex items-center md:w-1/2">

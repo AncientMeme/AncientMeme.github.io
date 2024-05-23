@@ -9,8 +9,8 @@ function Experience() {
     hidden: {},
     show: {
       transition: {
-        delayChildren: 0.5,
-        staggerChildren: 0.5,
+        delayChildren: 0.4,
+        staggerChildren: 0.4,
       }
     }
   }
