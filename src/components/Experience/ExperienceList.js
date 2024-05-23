@@ -1,5 +1,5 @@
 import React from "react";
-import Highlight from "../../Highlight.js";
+import Highlight from "../Highlight.js";
 import TextLink from "../TextLink.js";
 const ExperienceList = [
   {
