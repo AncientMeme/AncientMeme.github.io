@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.2c1d0d28.css",
-    "main.js": "/static/js/main.dc9b446e.js",
+    "main.js": "/static/js/main.df4e58b2.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/andrew-wang-cv.pdf": "/static/media/andrew-wang-cv.008904963da769a07e11.pdf",
     "static/media/uwuify.png": "/static/media/uwuify.d44c92c1e24863b8a39f.png",
     "static/media/pomodorofx.png": "/static/media/pomodorofx.fd75078aa20727a81236.png",
     "index.html": "/index.html",
     "main.2c1d0d28.css.map": "/static/css/main.2c1d0d28.css.map",
-    "main.dc9b446e.js.map": "/static/js/main.dc9b446e.js.map",
+    "main.df4e58b2.js.map": "/static/js/main.df4e58b2.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2c1d0d28.css",
-    "static/js/main.dc9b446e.js"
+    "static/js/main.df4e58b2.js"
   ]
 }
