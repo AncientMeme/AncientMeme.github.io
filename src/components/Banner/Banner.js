@@ -3,7 +3,7 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineArrowDown } from "react-icons/ai
 import Resume from "../../assets/andrew-wang-cv.pdf";
 import IconButton from "../IconButton.js";
 import Slider from "../Slider.js";
-import { easeOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { CgFileDocument } from "react-icons/cg";
 
 function Banner()
@@ -41,9 +41,17 @@ function Banner()
         </nav>
       </div>
       <motion.div
-          className="text-5xl text-dark-accent flex justify-center"
+          className="text-3xl text-dark-accent flex justify-center"
           initial={{
-            y: -50,
+            y: -150,
+          }}
+          animate={{
+            y: [-175, -150, -175],
+            transition: {
+              duration: 3.2,
+              repeat: Infinity,
+              ease: "easeOut",
+            }
           }}
         >
           <AiOutlineArrowDown />
