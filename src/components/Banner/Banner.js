@@ -1,8 +1,9 @@
 import React from "react";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiOutlineArrowDown } from "react-icons/ai";
 import Resume from "../../assets/andrew-wang-cv.pdf";
 import IconButton from "../IconButton.js";
 import Slider from "../Slider.js";
+import { easeOut, motion } from "framer-motion";
 import { CgFileDocument } from "react-icons/cg";
 
 function Banner()
@@ -39,6 +40,14 @@ function Banner()
           />
         </nav>
       </div>
+      <motion.div
+          className="text-5xl text-dark-accent flex justify-center"
+          initial={{
+            y: -50,
+          }}
+        >
+          <AiOutlineArrowDown />
+      </motion.div>
       <div className="self-end">
         <Slider
           text={"I BUILD STUFF"}
