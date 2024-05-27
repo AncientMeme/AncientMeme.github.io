@@ -8,7 +8,7 @@ const ProjectList = [
     image: pomodorofx,
     alt: "PomodoroFX, a JavaFX software",
     title: "PomodoroFX",
-    githubHref: "https://github.com/AncientMeme/pomodoroFX",
+    githubHref: "https://github.com/andrewmeme/pomodoroFX",
     content: 
       <>
         <p className="text-justify">
@@ -28,7 +28,7 @@ const ProjectList = [
     image: uwuify,
     alt: "uwuify, a Google Chrome Extension",
     title: "Uwuify",
-    githubHref: "https://github.com/AncientMeme/uwuify",
+    githubHref: "https://github.com/andrewmeme/uwuify",
     content: 
       <>
         <p className="text-justify">
