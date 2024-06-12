@@ -25,7 +25,7 @@ function Banner()
         <nav className="text-5xl md:text-6xl mt-6 flex content-center justify-center gap-x-2">
           <IconButton 
             Icon={<AiFillGithub/>}
-            href={"https://github.com/AncientMeme"}
+            href={"https://github.com/andrewmeme"}
             aria={"GitHub link to Andrew Wang's Profile"}
           />
           <IconButton 
